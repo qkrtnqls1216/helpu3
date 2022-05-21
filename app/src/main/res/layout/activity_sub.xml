@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            app:iconifiedByDefault="true"
+            app:queryHint="검색어를 입력하시오" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp">
+        </ListView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/receiveText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"/>
+    <TextView
+        android:id="@+id/receiveText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"/>
+    <android.widget.Button
+        android:id="@+id/button_sub"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:text="홈"
+        android:textSize="15dp"
+        android:background="@color/orange"
+        android:layout_alignParentBottom="true"/>
+
+    <android.widget.Button
+        android:id="@+id/button_sub2"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:text="글쓰기"
+        android:background="@color/orange"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="커뮤니티"-->
+<!--        android:textSize="20dp"-->
+<!--        android:background="@color/orange"-->
+<!--        android:layout_marginTop="-340dp"-->
+<!--        android:layout_marginLeft="-20dp"/>-->
+
+
+<!--    <android.widget.ListView-->
+<!--        android:id="@+id/listview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:dividerHeight="5dp"-->
+<!--        android:divider="@color/white"-->
+<!--        android:listSelector="@color/orange"-->
+<!--        android:fastScrollEnabled="true"-->
+<!--        android:fastScrollAlwaysVisible="true"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/txt_next"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text=""-->
+<!--        />-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="horizontal">-->
+<!--    </LinearLayout>-->
+<!--</LinearLayout>-->
